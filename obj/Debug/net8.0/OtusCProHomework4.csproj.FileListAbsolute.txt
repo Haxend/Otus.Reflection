@@ -1,0 +1,17 @@
+C:\Users\Haxend\Desktop\CSharpOtusHomework\Homework3\OtusCProHomework4\bin\Debug\net8.0\OtusCProHomework4.exe
+C:\Users\Haxend\Desktop\CSharpOtusHomework\Homework3\OtusCProHomework4\bin\Debug\net8.0\OtusCProHomework4.deps.json
+C:\Users\Haxend\Desktop\CSharpOtusHomework\Homework3\OtusCProHomework4\bin\Debug\net8.0\OtusCProHomework4.runtimeconfig.json
+C:\Users\Haxend\Desktop\CSharpOtusHomework\Homework3\OtusCProHomework4\bin\Debug\net8.0\OtusCProHomework4.dll
+C:\Users\Haxend\Desktop\CSharpOtusHomework\Homework3\OtusCProHomework4\bin\Debug\net8.0\OtusCProHomework4.pdb
+C:\Users\Haxend\Desktop\CSharpOtusHomework\Homework3\OtusCProHomework4\obj\Debug\net8.0\OtusCProHomework4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Haxend\Desktop\CSharpOtusHomework\Homework3\OtusCProHomework4\obj\Debug\net8.0\OtusCProHomework4.AssemblyInfoInputs.cache
+C:\Users\Haxend\Desktop\CSharpOtusHomework\Homework3\OtusCProHomework4\obj\Debug\net8.0\OtusCProHomework4.AssemblyInfo.cs
+C:\Users\Haxend\Desktop\CSharpOtusHomework\Homework3\OtusCProHomework4\obj\Debug\net8.0\OtusCProHomework4.csproj.CoreCompileInputs.cache
+C:\Users\Haxend\Desktop\CSharpOtusHomework\Homework3\OtusCProHomework4\obj\Debug\net8.0\OtusCProHomework4.dll
+C:\Users\Haxend\Desktop\CSharpOtusHomework\Homework3\OtusCProHomework4\obj\Debug\net8.0\refint\OtusCProHomework4.dll
+C:\Users\Haxend\Desktop\CSharpOtusHomework\Homework3\OtusCProHomework4\obj\Debug\net8.0\OtusCProHomework4.pdb
+C:\Users\Haxend\Desktop\CSharpOtusHomework\Homework3\OtusCProHomework4\obj\Debug\net8.0\OtusCProHomework4.genruntimeconfig.cache
+C:\Users\Haxend\Desktop\CSharpOtusHomework\Homework3\OtusCProHomework4\obj\Debug\net8.0\ref\OtusCProHomework4.dll
+C:\Users\Haxend\Desktop\CSharpOtusHomework\Homework3\OtusCProHomework4\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Haxend\Desktop\CSharpOtusHomework\Homework3\OtusCProHomework4\obj\Debug\net8.0\OtusCProHomework4.csproj.AssemblyReference.cache
+C:\Users\Haxend\Desktop\CSharpOtusHomework\Homework3\OtusCProHomework4\obj\Debug\net8.0\OtusCProHomework4.csproj.CopyComplete
