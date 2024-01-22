@@ -1,39 +1,67 @@
-﻿using System;
+﻿using BenchmarkDotNet.Configs;
+using BenchmarkDotNet.Running;
+using OtusCProHomework4;
+using OtusCProHomework4.Deserialize;
+using OtusCProHomework4.Models;
+using OtusCProHomework4.Serialize;
+using System;
 using System.Diagnostics;
-using System.IO;
+using System.Reflection;
 using System.Text;
-using Newtonsoft.Json;
-
-public class F
-{
-    public int i1, i2, i3, i4, i5;
-
-    public static F Get() => new F() { i1 = 1, i2 = 2, i3 = 3, i4 = 4, i5 = 5 };
-}
+using System.Text.Json;
 
 public class Program
 {
     public static void Main()
     {
-        Stopwatch sw = new Stopwatch();
-        sw.Start();
+        var csvSerializer = new CsvSerializer();
+        var csvDeserializer = new CsvDeserializer();
+        var stopwatch = new Stopwatch();
 
-        // Serialize
-        var obj = F.Get();
-        var json = JsonConvert.SerializeObject(obj);
-        Console.WriteLine("Serialized JSON: " + json);
+        // Serialize and Deserialize with various object sizes
+        foreach (var size in Enumerable.Range(1, 5))
+        {
+            Console.Write(size + ". ");
+            var f = F.Get(size);
 
-        sw.Stop();
-        Console.WriteLine("Serialization time: " + sw.Elapsed);
+            // CSV Serialization
+            stopwatch.Restart();
+            for (int i = 0; i < 100000; i++)
+            {
+                csvSerializer.Serialize(f);
+            }
+            stopwatch.Stop();
+            Console.WriteLine($"CSV serialization time for object size {size}: {stopwatch.ElapsedMilliseconds} ms");
 
-        sw.Reset();
-        sw.Start();
+            // JSON Serialization
+            stopwatch.Restart();
+            for (int i = 0; i < 100000; i++)
+            {
+                JsonSerializer.Serialize(f);
+            }
+            stopwatch.Stop();
+            Console.WriteLine($"JSON serialization time for object size {size}: {stopwatch.ElapsedMilliseconds} ms");
 
-        // Deserialize
-        var objDeserialized = JsonConvert.DeserializeObject<F>(json);
-        Console.WriteLine("Deserialized object: " + objDeserialized);
+            // CSV Deserialization
+            var csvData = csvSerializer.Serialize(f);
+            stopwatch.Restart();
+            for (int i = 0; i < 100000; i++)
+            {
+                csvDeserializer.Deserialize<F>(csvData);
+            }
+            stopwatch.Stop();
+            Console.WriteLine($"CSV deserialization time for object size {size}: {stopwatch.ElapsedMilliseconds} ms");
 
-        sw.Stop();
-        Console.WriteLine("Deserialization time: " + sw.Elapsed);
+            // JSON Deserialization
+            var jsonData = JsonSerializer.Serialize(f);
+            stopwatch.Restart();
+            for (int i = 0; i < 100000; i++)
+            {
+                JsonSerializer.Deserialize<F>(jsonData);
+            }
+            stopwatch.Stop();
+            Console.WriteLine($"JSON deserialization time for object size {size}: {stopwatch.ElapsedMilliseconds} ms");
+        }
     }
+
 }

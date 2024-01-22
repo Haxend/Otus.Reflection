@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Haxend\\Desktop\\CSharpOtusHomework\\Homework3\\OtusCProHomework4\\OtusCProHomework4.csproj": {}
+    "D:\\Projects\\ReflectionHomework\\OtusCProHomework4.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Haxend\\Desktop\\CSharpOtusHomework\\Homework3\\OtusCProHomework4\\OtusCProHomework4.csproj": {
+    "D:\\Projects\\ReflectionHomework\\OtusCProHomework4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Haxend\\Desktop\\CSharpOtusHomework\\Homework3\\OtusCProHomework4\\OtusCProHomework4.csproj",
+        "projectUniqueName": "D:\\Projects\\ReflectionHomework\\OtusCProHomework4.csproj",
         "projectName": "OtusCProHomework4",
-        "projectPath": "C:\\Users\\Haxend\\Desktop\\CSharpOtusHomework\\Homework3\\OtusCProHomework4\\OtusCProHomework4.csproj",
+        "projectPath": "D:\\Projects\\ReflectionHomework\\OtusCProHomework4.csproj",
         "packagesPath": "C:\\Users\\Haxend\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Haxend\\Desktop\\CSharpOtusHomework\\Homework3\\OtusCProHomework4\\obj\\",
+        "outputPath": "D:\\Projects\\ReflectionHomework\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -45,6 +45,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "BenchmarkDotNet": {
+              "target": "Package",
+              "version": "[0.13.12, )"
+            },
+            "BenchmarkDotNet.Annotations": {
+              "target": "Package",
+              "version": "[0.13.12, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
